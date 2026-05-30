@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE courses \nSET image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663139677222/SArlgPoHslwGQIHs.jpg'\nWHERE slug = 'eja-educacao-de-jovens-e-adultos';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4KWo26a2T5v8tqr.36be4f2cdb87 --database Ysf325tVB4N56WEdj6u4cA --execute UPDATE courses \nSET image = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663139677222/SArlgPoHslwGQIHs.jpg'\nWHERE slug = 'eja-educacao-de-jovens-e-adultos';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 137
+}

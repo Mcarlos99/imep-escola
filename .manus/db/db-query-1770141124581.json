@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE courses SET videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' WHERE slug = 'tecnico-em-seguranca-do-trabalho-atualizado';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4KWo26a2T5v8tqr.36be4f2cdb87 --database Ysf325tVB4N56WEdj6u4cA --execute UPDATE courses SET videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' WHERE slug = 'tecnico-em-seguranca-do-trabalho-atualizado';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 100
+}

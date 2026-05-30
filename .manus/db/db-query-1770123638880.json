@@ -1,0 +1,34 @@
+{
+  "query": "SHOW CREATE TABLE courses;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4KWo26a2T5v8tqr.36be4f2cdb87 --database Ysf325tVB4N56WEdj6u4cA --execute SHOW CREATE TABLE courses;",
+  "rows": [
+    {
+      "Table": "courses",
+      "Create Table": "CREATE TABLE `courses` ("
+    }
+  ],
+  "messages": [
+    "  `id` int(11) NOT NULL AUTO_INCREMENT,",
+    "  `title` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `slug` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `shortDescription` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `categoryId` int(11) NOT NULL,",
+    "  `duration` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `modality` enum('presencial','ead','hibrido') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'presencial',",
+    "  `price` decimal(10,2) DEFAULT NULL,",
+    "  `originalPrice` decimal(10,2) DEFAULT NULL,",
+    "  `image` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `isActive` tinyint(1) NOT NULL DEFAULT '1',",
+    "  `isFeatured` tinyint(1) NOT NULL DEFAULT '0',",
+    "  `order` int(11) DEFAULT '0',",
+    "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,",
+    "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,",
+    "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,",
+    "  UNIQUE KEY `courses_slug_unique` (`slug`)",
+    ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci"
+  ],
+  "stdout": "Table\tCreate Table\ncourses\tCREATE TABLE `courses` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `title` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `slug` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `shortDescription` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `categoryId` int(11) NOT NULL,\n  `duration` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `modality` enum('presencial','ead','hibrido') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'presencial',\n  `price` decimal(10,2) DEFAULT NULL,\n  `originalPrice` decimal(10,2) DEFAULT NULL,\n  `image` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `isActive` tinyint(1) NOT NULL DEFAULT '1',\n  `isFeatured` tinyint(1) NOT NULL DEFAULT '0',\n  `order` int(11) DEFAULT '0',\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,\n  UNIQUE KEY `courses_slug_unique` (`slug`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}
