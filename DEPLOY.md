@@ -18,6 +18,8 @@ imepedu-site
 3005
 17XNXAgb3ex0mD8SdDBh
 
+/home/imepedu-site/htdocs/www.imepedu.com.br
+
 ### 1.1 Instalar Node.js
 
 ```bash
@@ -41,12 +43,10 @@ pnpm --version
 
 Crie um banco de dados vazio para o projeto:
 
-```sql
-CREATE DATABASE imep_escola CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'imep_user'@'localhost' IDENTIFIED BY 'sua_senha_segura';
-GRANT ALL PRIVILEGES ON imep_escola.* TO 'imep_user'@'localhost';
-FLUSH PRIVILEGES;
-```
+DATABASE imepsitedb
+USER:  imepsiteuser
+senha: 3j7CtsLdCNO1nMn8PhWe
+
 
 ## Passo 2: Configurar o Projeto
 

@@ -283,7 +283,7 @@ export default function Navbar() {
                 Área do Aluno
               </Button>
             </a>
-            <Link href="/pre-matricula">
+            <Link href="https://finan.imepedu.com.br/pre-matricula" target="_blank" rel="noopener noreferrer">
               <Button className="bg-secondary hover:bg-secondary/90 text-white shadow-md hover:shadow-lg transition-all rounded-full px-6">
                 Matricule-se
               </Button>
