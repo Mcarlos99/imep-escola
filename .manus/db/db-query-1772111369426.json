@@ -1,9 +1,0 @@
-{
-  "query": "-- Atualizar cursos de Geral para Cursos Técnicos\nUPDATE courses \nSET categoryId = 13 \nWHERE categoryId = 12;\n\n-- Verificar atualização\nSELECT c.id, c.title, c.categoryId, cat.name as categoryName \nFROM courses c \nLEFT JOIN categories cat ON c.categoryId = cat.id \nWHERE c.categoryId = 13\nLIMIT 5;",
-  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4KWo26a2T5v8tqr.36be4f2cdb87 --database Ysf325tVB4N56WEdj6u4cA --execute -- Atualizar cursos de Geral para Cursos Técnicos\nUPDATE courses \nSET categoryId = 13 \nWHERE categoryId = 12;\n\n-- Verificar atualização\nSELECT c.id, c.title, c.categoryId, cat.name as categoryName \nFROM courses c \nLEFT JOIN categories cat ON c.categoryId = cat.id \nWHERE c.categoryId = 13\nLIMIT 5;",
-  "rows": [],
-  "messages": [],
-  "stdout": "",
-  "stderr": "",
-  "execution_time_ms": 62
-}
